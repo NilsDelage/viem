@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "viem"
+  "name": "viem",
   "type": "module",
   "scripts": {
     "bench": "vitest bench",
