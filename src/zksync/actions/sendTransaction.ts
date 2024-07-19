@@ -82,6 +82,7 @@ export async function sendTransaction<
   client: Client<Transport, chain, account>,
   parameters: SendTransactionParameters<chain, account, chainOverride, request>,
 ): Promise<SendTransactionReturnType> {
+  console.log("triggered sendTransaction of forked viem library (https://github.com/NilsDelage/viem/blob/main/src/zksync/actions/sendTransaction.ts")
   if (isEIP712Transaction(parameters))
     return sendEip712Transaction(
       client,
